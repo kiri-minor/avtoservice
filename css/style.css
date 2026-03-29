@@ -95,6 +95,7 @@ p, h1, h2, h3 {
     text-align: center;
     padding: 2rem;
     min-height: 25rem;
+    max-width: 100%;
  
 }
 .hero__form__headline{
@@ -106,12 +107,13 @@ p, h1, h2, h3 {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    width: 100%;
       font-family: 'Oswald', sans-serif;
 
    
 }
 .name__input{
-    width: 25rem;
+    width: 100%;
     min-height: 3rem;
     border-radius: 1rem;
     padding: 1rem;
@@ -330,7 +332,7 @@ p, h1, h2, h3 {
     padding: 1rem;
     background-color: rgb(255, 255, 255);
     border-radius: 1rem;
-    min-height: 10rem;
+    min-height: 5rem;
 }
 .ser__content{
     align-items: center;
@@ -483,6 +485,10 @@ p, h1, h2, h3 {
 .footer__icons{
     display: flex;
     gap: 1rem;
+    
+}
+.footer__icons__img{
+min-height: 3rem;
 }
 .burger{
     display: none;
@@ -547,28 +553,85 @@ p, h1, h2, h3 {
         flex-direction: column;
         width: 2rem;
         height: 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        background-color: rgb(255, 255, 255);
         border: none;
         cursor: pointer;
+        order: 1;
+    }
+    .header__inner{
+        order: 2;
     }
     .nav{
-        background-color: aliceblue;
-        left: 0;
+        background-color: rgb(255, 255, 255);
         display: none;
     }
     .nav.active{
         display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
         min-height: 10rem;
         position: absolute;
-         width: 50%;
+         width: auto;
          border-radius: 1rem;
-        top: 5rem;
+        top: 6.4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        justify-content: center;
+   
     }
     .header__list{
+        display: inline-flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        gap: 1rem;
-        margin-left: 0.5rem;
-        padding: 1rem 2rem;
+        align-items: center;
+      row-gap: 6rem;
+      font-size: 1.5rem;
+      padding: 1rem;
     }
+    .about__images{
+        display: none;
+    }
+    .about__inner{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .services__item{
+      gap: 0;
+    }
+    .service__cost{
+        display: inline-block;
+    }
+    .team__list{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1rem;
+    }
+    .team__text{
+        max-width:70%;
+    }
+.poss__inner__kard{
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer__icons{
+    flex-direction: column;
+}
+.help__form{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    padding: 2rem 2rem;
+    gap: 2rem;
+}
+.footer__icons__img{
+    width: 3rem;
+}
+.gua__headline{
+    font-size: 1.5rem;
+}
 }

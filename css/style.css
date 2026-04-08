@@ -614,6 +614,9 @@ min-height: 3rem;
     .team__text{
         max-width:70%;
     }
+    .gua__wrapper{
+      padding: 3rem;
+    }
 .poss__inner__kard{
     grid-template-columns: repeat(2, 1fr);
 }
@@ -623,6 +626,12 @@ min-height: 3rem;
 .help__form{
     display: flex;
     flex-direction: column;
+}
+.help__headline{
+    font-size: 1.3rem;
+}
+.gua__headline{
+    font-size: 1rem;
 }
 .footer{
     padding: 2rem 2rem;
